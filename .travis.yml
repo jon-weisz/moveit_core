@@ -7,7 +7,7 @@ python:
   - "2.7"
 compiler:
   - gcc
-build_environment: Ubuntu 14.04
+build_environment: shippableimages/ubuntu1404_python	
 notifications:
   email:
     recipients:
