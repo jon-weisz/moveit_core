@@ -7,6 +7,8 @@ python:
   - "2.7"
 compiler:
   - gcc
+cache: false
+  
 build_image: shippableimages/ubuntu1404_python	
 notifications:
   email:
