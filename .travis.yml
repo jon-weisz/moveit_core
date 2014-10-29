@@ -34,10 +34,9 @@ before_install: # Use this to prepare the system to install prerequisites or dep
 
 install: # Use this to install any prerequisites or dependencies necessary to run your build
   # Create workspace
-  - mkdir ~/ros
-  - mkdir ~/ros/ws_moveit
-  - mkdir ~/ros/ws_moveit/src
-  - cd ~/ros/ws_moveit/src
+  - cd $CI_SOURCE_PATH/..
+  - mkdir -p ./ros/ws_moveit/src
+  - cd ./ros/ws_moveit/src
   - wstool init .
   # Download non-debian stuff
   - wstool merge https://raw.github.com/ros-planning/moveit_docs/hydro-devel/moveit.rosinstall
