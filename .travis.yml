@@ -37,7 +37,7 @@ before_install: # Use this to prepare the system to install prerequisites or dep
 install: # Use this to install any prerequisites or dependencies necessary to run your build
   # Create workspace
   - cd $CI_SOURCE_PATH/..
-  - mkdir -p ./ros/ws_moveit/src
+  #- mkdir -p ./ros/ws_moveit/src
   - cd ./ros/ws_moveit/src
   - wstool init .
   # Download non-debian stuff
